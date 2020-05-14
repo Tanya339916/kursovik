@@ -14,7 +14,7 @@
 * Пространства имен `namespace`
 * структура `struct`
 * Типы данных：`int` , `double` , `char` , `String`
-* `if` 、`elif` 、`else` логические блоки
+* `if`, `elif` ,`else` логические блоки
 * `for` ，`while`, `break` ，`continue` циклические блоки
 
 ## Архитектура компилятора
