@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id 'antlr'
+    id 'application'
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.13'
+    antlr "org.antlr:antlr4:4.8"
+    compile group: 'org.ow2.asm', name: 'asm', version: '8.0.1'
+    compile group: 'commons-cli', name: 'commons-cli', version: '1.4'
+}
+
+generateGrammarSource {
+    outputDirectory = file("src/main/java/parser")
+    arguments += ["-visitor",
+                  "-long-messages"]
+}
+
+run {
+    mainClassName = 'Main'
+    args = ["./test/string.jc"]
+}
+
+mainClassName = "Main"
+jar {
+    manifest {
+        attributes "Main-Class": "$mainClassName"
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
