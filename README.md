@@ -1,26 +1,26 @@
 # Курсовая работа, Ильиных Т.А., ИБ-117
 запуск для тестирования (на компьютере установлена windows 10,java 14, gradle 6.4.1) 
 для windows 10 прописать в системных переменых patch для java и gradle.
-(image/patch.png)
+![добавлено:](image/patch.png)
 клонируем или скачиваем с репозитория на компьютер.
 открываем командную строку windows (cmd) в папке проекта у меня это c:\Users\tanya\Documents\GitHub\kursovik\
 (image/cmd1.png)
 компилируем (собираем) проект с помощью команды: 
 ## gradle build
-(image/cmd2.png)
+![добавлено:](image/cmd2.png)
 Скомпилированый файл JCKurs.jar находится в папке .\build\libs\:
 (у меня c:\Users\tanya\Documents\GitHub\kursovik\build\libs\)
 Проводим тестирование нашего языка файлы примеров в папке .\test
 1.Создаем  байт код нашего языка для виртуальной java машины (JVM) :
 ## java -jar .\build\libs\JCKurs.jar .\test\string.jc
-(image/cmd3.png)
+![добавлено:](image/cmd3.png)
 Получили файл .\test\TestClass.class, который является байт кодом.
 2. Запустим этот файл с помощью команды:
 ## java -cp .\test\ TestClass
-(image/cmd3.png)
+![добавлено:](image/cmd3.png)
 Декомпилированный байт код можно посмотреть с помощью команды:
 ## javap -v .\test\TestClass.class
-(image/cmd4.png)
+![добавлено:](image/cmd4.png)
 
  
 
