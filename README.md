@@ -4,7 +4,7 @@
 ![добавлено:](image/patch.png)
 клонируем или скачиваем с репозитория на компьютер.
 открываем командную строку windows (cmd) в папке проекта у меня это c:\Users\tanya\Documents\GitHub\kursovik\
-(image/cmd1.png)
+![добавлено:](image/cmd1.png)
 компилируем (собираем) проект с помощью команды: 
 ## gradle build
 ![добавлено:](image/cmd2.png)
