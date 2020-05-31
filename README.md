@@ -26,12 +26,12 @@
 2. Запустим этот файл с помощью команды:
 ## java -cp .\test\ TestClass
 
-![добавлено:](image/cmd3.png)
+![добавлено:](image/cmd4.png)
 
 Декомпилированный байт код можно посмотреть с помощью команды:
 ## javap -v .\test\TestClass.class
 
-![добавлено:](image/cmd4.png)
+![добавлено:](image/cmd5.png)
 
  
 
